@@ -1,8 +1,17 @@
-body, html {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body, html, #root {
   margin: 0;
   padding: 0;
   width: 100%;
   height:100%;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 #root {
@@ -20,15 +29,32 @@ body, html {
   border: 1px solid black;
   justify-content: center;
   flex-direction: row;
+  width: 100%;
   align-items: center;
+  background-color: #F55A5A;
 }
 
 .App-logo {
-  width: 1.4vw;
+  width: 2.3vw;
 }
 
 .logo-title-header {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  
+  width: 140px;
+  height: 24px;
+  margin: 1vw;
+  align-items: center;
+}
+
+.logo-title-header > h1 {
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: .9rem;
+  line-height: 17.5px;
+  white-space: nowrap;
+
 }
