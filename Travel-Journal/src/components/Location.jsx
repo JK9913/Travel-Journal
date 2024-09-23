@@ -1,23 +1,23 @@
-export default function Location() {
+export default function Location(props) {
 
     return (
         <div className="location-element">
             <div className="location-image">
-                <img src="./src/assets/Rectangle_77.png" alt="Mount Fuji" />
+                <img src={props.item.imageUrl} alt={props.item.title} />
             </div>
             <div className="location-content">
                 <div className="spans">
                     <span className="location-location">
                         <img src="./src/assets/Fill_219.svg" alt="location icon" />
-                            Japan
+                            {props.item.location}
                         </span> 
                     <span className="location-maps">
-                        <small>View on Google Maps</small>
+                        <a href={props.item.googleMapsUrl}>View on Google Maps</a>
                     </span>
                 </div>
-                <h2 className="location-title">Mount Fuji</h2>
-                <h4 className="location-date">12 Jan, 2021 - 24 Jan, 2021</h4>
-                <p className="location-details">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                <h2 className="location-title">{props.item.title}</h2>
+                <h4 className="location-date">{props.item.startDate} - {props.item.endDate}</h4>
+                <p className="location-details">{props.item.description}</p>
             </div>
         </div>
 
