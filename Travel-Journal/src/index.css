@@ -58,3 +58,76 @@ body {
   white-space: nowrap;
 
 }
+
+.location-element {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  max-height: 20vh;
+}
+
+.location-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.location-image > img {
+  height: 20vh;
+  width: 15vw;
+}
+
+.location-location {
+  font-family: Inter;
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: 17%;
+  height: .1vh;
+  margin-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: .3vw;
+}
+
+
+.location-maps {
+  text-decoration: underline;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: .64rem;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.location-date {
+  height: .5vh;
+  font-family: Inter;
+  font-weight: 550;
+  font-size: .9rem;
+}
+
+.location-title {
+  height: .1vh;
+  font-family: Inter;
+}
+
+.spans {
+  height: .5vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.location-details {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: .7rem;
+}
